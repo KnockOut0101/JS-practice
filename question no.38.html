@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+var a=new Array()
+while(true)
+	{
+	var b=parseInt(prompt("Enter a value:-"))
+	a.push(b)
+	var c=prompt("Do you want to continue:-")
+	if (c=="no")
+		{
+		break
+		}
+	}
+var f=a.length
+document.write(a+"<br>"+f+"<br>")
+var d=parseInt(prompt("Enter element needed"))
+var e=a.includes(d)
+if (e===true)
+	{
+	var f=a.indexOf(d)
+	document.write(f+"index")
+	}
+else
+	{
+	document.write("<b>"+"No. not present"+"</b>")
+	}
+</script>
+</body>
+</html>

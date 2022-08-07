@@ -1,0 +1,28 @@
+<html>
+<body>
+<script>
+var a=new Array()
+while(true)
+	{
+	var b=prompt("Enter any string value:-")
+	a.push(b)
+	var c=prompt("Do you want to continue?!")
+	if(c=="no")
+		{
+		break
+		}
+	}
+document.write(a+"<br>")
+var d=a[0].includes("start")
+if(d===true)
+	{
+	a[0]="end"
+	document.write(a)
+	}
+else
+	{
+	document.write("start doesn't exist")
+	}
+</script>
+</body>
+</html>

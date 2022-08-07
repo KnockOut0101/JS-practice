@@ -1,0 +1,30 @@
+<html>
+<body>
+Click Button here:-
+<button onclick="substring()">
+SubString
+</button>
+<script>
+var a=prompt("Enter a string:-")
+function substring()
+{
+var b=prompt("Enter another string:-")
+var c=a.includes(b)
+if (c===true)
+	{
+	for(var i=1;i<4;i++)
+		{
+		document.write(b)
+		}
+	document.write(a)
+	}
+else
+	{
+	var d=a.concat(b)
+	document.write(d)
+	}
+
+}
+</script>
+</body>
+</html>

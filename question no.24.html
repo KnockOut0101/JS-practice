@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var a=prompt("Enter a string")
+for(var i=0;i<a.length;i=i+2)
+{
+var b=a.charAt(i)
+b=b.toUpperCase()
+var c=a.charAt(i+1)
+c=c.toLowerCase()
+a=a.replace(a.charAt(i),b)
+a=a.replace(a.charAt(i+1),c)
+}
+document.write(a+"<br>"+b+"<br>"+c)
+</script>
+</body>
+</html>

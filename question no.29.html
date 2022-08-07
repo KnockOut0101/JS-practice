@@ -1,0 +1,29 @@
+<html>
+<body>
+<button onclick="String()">
+String in or out
+</button>
+<script>
+var a=prompt("Enter a String")
+document.write(a)
+function String()
+{
+var b=prompt("Enter a String:-")
+document.write(b+"<br>")
+var c=a.includes(b)
+if (c===true)
+	{
+	var d=a.indexOf(b)
+	var e=a.slice(d,b.length+1)
+	var f=a.replace(e,"")
+	document.write(f)
+	}
+else
+	{
+	var d=a.concat(b)
+	document.write(d)
+	}
+}
+</script>
+</body>
+</html>

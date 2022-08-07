@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+var a=new Array()
+while(true)
+	{
+	var b=prompt("Enter a string to add")
+	var c=a.push(b)
+	var d=prompt("Do you want to continue?!")
+	if (d=="no")
+		{
+		document.write(a+"<br>")
+		while(true)
+			{
+			var b=prompt("Enter a string to add")
+			var e=parseInt(prompt("Enter a postion:-"))
+			var c=a.splice(e,0,b)
+			var d=prompt("Do you want to continue?!")
+			if (d=="no")
+				{
+				break
+				}
+			}
+		break
+		}
+	}
+document.write(a)
+</script>
+</body>
+</html>
